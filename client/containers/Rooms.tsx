@@ -24,7 +24,7 @@ function RoomsContainer() {
     if (key === roomId) return;
 
     socket.emit(EVENTS.CLIENT.JOIN_ROOM, key);
-  }
+  };
 
   return (
     <nav className={styles.wrapper}>
