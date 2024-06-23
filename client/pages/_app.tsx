@@ -1,8 +1,7 @@
 import "../styles/globals.css";
 import SocketsProvider from "../context/socket.context";
-import { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <SocketsProvider>
       <Component {...pageProps} />
